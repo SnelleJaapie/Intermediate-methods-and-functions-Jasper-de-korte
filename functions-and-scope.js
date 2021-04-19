@@ -3,7 +3,7 @@
 // Tip: je mag hier geen ingebouwde object methoden gebruiken, dus daar hoef je niet naar te kijken.
 
 const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
-
+//test
 /* Opdracht  1: Cum Laude */
 
 /* 1a: Script schrijven  */
@@ -16,6 +16,23 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
 // ---- Verwachte uitkomst: 6
 
+//een forloop maken die het index nummer selecteerd, en dan een if statement die checkt of de waarde op het index nummer groter of gelijk is aan 8.
+
+function checkGrades() {
+    let cumLaudes = [];
+
+    // in de loop gebruiken we geen return, want we willen alles afgaan
+    for(let i = 0; i < grades.length; i++) {
+        if (grades[i] >= 8) {
+            cumLaudes.push(grades[i]);
+        }
+    }
+
+    // als de loop klaar is, dan returnen we hoeveel hoge cijfers we hebben verzameld:
+    return cumLaudes.length;
+}
+const outcome = checkGrades()
+console.log(outcome)
 
 /*  1b: Omschrijven tot een herbruikbare functie   */
 // Schrijf een functie genaamd cumLaude, die een array van cijfers verwacht (zoals grades) en het aantal Cum laude studenten teruggeeft. Gebruik hiervoor jouw antwoord van 1a.
