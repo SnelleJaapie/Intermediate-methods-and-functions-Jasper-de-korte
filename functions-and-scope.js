@@ -19,17 +19,20 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 //een forloop maken die het index nummer selecteerd, en dan een if statement die checkt of de waarde op het index nummer groter of gelijk is aan 8.
 
 function checkGrades() {
-    for (let i = 0; i < grades.length; i++) {
+    let cumLaudes = [];
+
+    // in de loop gebruiken we geen return, want we willen alles afgaan
+    for(let i = 0; i < grades.length; i++) {
         if (grades[i] >= 8) {
-            console.log("Cumlaude")
-        } else {
-            console.log("normaal")
+            cumLaudes.push(grades[i]);
         }
     }
 
+    // als de loop klaar is, dan returnen we hoeveel hoge cijfers we hebben verzameld:
+    return cumLaudes.length;
 }
-console.log(checkGrades())
-
+const outcome = checkGrades()
+console.log(outcome)
 
 /*  1b: Omschrijven tot een herbruikbare functie   */
 // Schrijf een functie genaamd cumLaude, die een array van cijfers verwacht (zoals grades) en het aantal Cum laude studenten teruggeeft. Gebruik hiervoor jouw antwoord van 1a.
