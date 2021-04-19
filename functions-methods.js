@@ -61,14 +61,14 @@ console.log("----------------------------------------------------")
 // checkEmailValidity("n.eeken@novinl.") geeft false - want de punt mag niet als laatst
 // checkEmailValidity("tessmellink@novi,nl") geeft false - want er staat een komma in
 
-function checkEmailValidity(inputEmailAdress) {
-    if (inputEmailAdress.includes(",")) {
-        return false
-    } if (inputEmailAdress.includes("@") {
-        return true
-    }
-}
-console.log(checkEmailValidity("n.eeken@novi.nl"))
+// function checkEmailValidity(inputEmailAdress) {
+//     if (inputEmailAdress.includes(",")) {
+//         return false
+//     } if (inputEmailAdress.includes("@") {
+//         return true
+//     }
+// }
+// console.log(checkEmailValidity("n.eeken@novi.nl"))
 //test
 // const emailAdress =  inputEmailAdress.split("@").pop()
 // if (emailAdress.includes())
