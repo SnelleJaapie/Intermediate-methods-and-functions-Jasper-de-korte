@@ -8,13 +8,16 @@
 // getEmailDomain("n.eeken@novi-education.nl") geeft novi-education.nl
 // getEmailDomain("t.mellink@novi.nl") geeft novi.nl
 // getEmailDomain("a.wiersma@outlook.com") geeft outlook.com
-// function getEmailDomain(inputEmailAdress) {
-//     const emailAdress = inputEmailAdress.split("@").pop()
-//     return emailAdress
-// }
-// console.log(getEmailDomain("n.eeken@novi-education.nl"))
-// console.log(getEmailDomain("t.mellink@novi.nl"))
-// console.log(getEmailDomain("a.wiersma@outlook.com"))
+
+function getEmailDomain(inputEmailAdress) {
+    const emailAdress = inputEmailAdress.split("@").pop()
+    return emailAdress
+}
+console.log(getEmailDomain("n.eeken@novi-education.nl"))
+console.log(getEmailDomain("t.mellink@novi.nl"))
+console.log(getEmailDomain("a.wiersma@outlook.com"))
+
+
 
 console.log("----------------------------------------------------")
 /* Opdracht  2 */
@@ -43,10 +46,8 @@ console.log(typeOfEmail("n.eeken@novi-education.nl"))
 console.log(typeOfEmail("t.mellink@novi.nl"))
 console.log(typeOfEmail("a.wiersma@outlook.com"))
 
+
 console.log("----------------------------------------------------")
-
-
-
 /* Opdracht  3 */
 // Schrijf een functie genaamd checkEmailValidity, die een emailadres verwacht en checkt of het emailadres valide is. De functie returned true of false, afhankelijk van de uitkomst.
 // Een emailadres is valide wanneer:
@@ -60,15 +61,14 @@ console.log("----------------------------------------------------")
 // checkEmailValidity("n.eeken@novinl.") geeft false - want de punt mag niet als laatst
 // checkEmailValidity("tessmellink@novi,nl") geeft false - want er staat een komma in
 
-// function checkEmailValidity(inputEmailAdress) {
-//     if (inputEmailAdress.includes(",")) {
-//         console.log(inputEmailAdress, false)
-//     }
-// }
-// checkEmailValidity("n.eeken@novi.nl")
-// checkEmailValidity("tessmellink@novi.nl")
-// checkEmailValidity("n.eekenanovi.nl")
-// checkEmailValidity("n.eeken@novinl.")
-// checkEmailValidity("tessmellink@novi,nl")
-
+function checkEmailValidity(inputEmailAdress) {
+    if (inputEmailAdress.includes(",")) {
+        return false
+    } if (inputEmailAdress.includes("@") {
+        return true
+    }
+}
+console.log(checkEmailValidity("n.eeken@novi.nl"))
 //test
+// const emailAdress =  inputEmailAdress.split("@").pop()
+// if (emailAdress.includes())
