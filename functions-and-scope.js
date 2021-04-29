@@ -18,26 +18,42 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
 //een forloop maken die het index nummer selecteerd, en dan een if statement die checkt of de waarde op het index nummer groter of gelijk is aan 8.
 
-function checkGrades() {
-    let cumLaudes = [];
+// function checkGrades() {
+//     let cumLaudes = [];
+//
+//     // in de loop gebruiken we geen return, want we willen alles afgaan
+//     for(let i = 0; i < grades.length; i++) {
+//         if (grades[i] >= 8) {
+//             cumLaudes.push(grades[i]);
+//         }
+//     }
+//
+//     // als de loop klaar is, dan returnen we hoeveel hoge cijfers we hebben verzameld:
+//     return cumLaudes.length;
+// }
+// const outcome = checkGrades()
+// console.log(outcome)
+// console.log("-------------------------------------------------------------------------")
+// /*  1b: Omschrijven tot een herbruikbare functie   */
+// // Schrijf een functie genaamd cumLaude, die een array van cijfers verwacht (zoals grades) en het aantal Cum laude studenten teruggeeft. Gebruik hiervoor jouw antwoord van 1a.
+// // Zorg ervoor dat jouw functie ook werkt als we een andere array met eindcijfers willen checken, zoals bijvoorbeeld: [6, 4, 5] of [8, 9, 4, 6, 10].
+// // Log het antwoord in de terminal.
+//
+// const inputArray = grades
+//
+// function checkgrades2() {
+//     let cumlaudes2 = []
+//
+//     for (let i = 0; i < inputArray.length; i++) {
+//         if (inputArray[i] >= 8) {
+//             cumlaudes2.push(inputArray[i])
+//         }
+//     }
+//     return cumlaudes2.length
+// }
+// const outcome2 = checkgrades2()
+// console.log(outcome2)
 
-    // in de loop gebruiken we geen return, want we willen alles afgaan
-    for(let i = 0; i < grades.length; i++) {
-        if (grades[i] >= 8) {
-            cumLaudes.push(grades[i]);
-        }
-    }
-
-    // als de loop klaar is, dan returnen we hoeveel hoge cijfers we hebben verzameld:
-    return cumLaudes.length;
-}
-const outcome = checkGrades()
-console.log(outcome)
-
-/*  1b: Omschrijven tot een herbruikbare functie   */
-// Schrijf een functie genaamd cumLaude, die een array van cijfers verwacht (zoals grades) en het aantal Cum laude studenten teruggeeft. Gebruik hiervoor jouw antwoord van 1a.
-// Zorg ervoor dat jouw functie ook werkt als we een andere array met eindcijfers willen checken, zoals bijvoorbeeld: [6, 4, 5] of [8, 9, 4, 6, 10].
-// Log het antwoord in de terminal.
 
 // ---- Verwachte uitkomsten:
 // cumLaude(grades) geeft 6
@@ -58,12 +74,34 @@ console.log(outcome)
 // Log het antwoord in de terminal.
 
 // ---- Verwachte uitkomst: 6.642857142857143
-
+// function gradesAverage() {
+//     let total = 0
+//     for (let i = 0; i < grades.length; i++) {
+//     total += grades[i];
+//
+//     }
+//     return total/grades.length
+// }
+//
+// const outcomeGradesAverage = gradesAverage()
+// console.log(outcomeGradesAverage)
 
 /* 2b: Omschrijven tot een herbruikbare functie */
 // Schrijf een functie genaamd averageGrade, die een array van cijfers verwacht (zoals grades) en het gemiddelde cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 2a.
 // Zorg ervoor dat jouw functie ook werkt als we een andere array willen checken, zoals bijvoorbeeld: [6, 4, 5] of [8, 9, 4, 6, 10].
 // Log het antwoord in de terminal.
+
+function gradesAverage(inputArray) {
+    let total = 0
+    for (let i = 0; i < inputArray.length; i++) {
+        total += inputArray[i];
+
+    }
+    return total/inputArray.length
+}
+
+const outcomeGradesAverage = gradesAverage([8, 9, 4, 6, 10])
+console.log(outcomeGradesAverage)
 
 // ---- Verwachte uitkomsten:
 // averageGrade(grades) geeft 6.642857142857143
