@@ -91,17 +91,17 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 // Zorg ervoor dat jouw functie ook werkt als we een andere array willen checken, zoals bijvoorbeeld: [6, 4, 5] of [8, 9, 4, 6, 10].
 // Log het antwoord in de terminal.
 
-function gradesAverage(inputArray) {
-    let total = 0
-    for (let i = 0; i < inputArray.length; i++) {
-        total += inputArray[i];
-
-    }
-    return total/inputArray.length
-}
-
-const outcomeGradesAverage = gradesAverage([8, 9, 4, 6, 10])
-console.log(outcomeGradesAverage)
+// function gradesAverage(inputArray) {
+//     let total = 0
+//     for (let i = 0; i < inputArray.length; i++) {
+//         total += inputArray[i];
+//
+//     }
+//     return total/inputArray.length
+// }
+//
+// const outcomeGradesAverage = gradesAverage([8, 9, 4, 6, 10])
+// console.log(outcomeGradesAverage)
 
 // ---- Verwachte uitkomsten:
 // averageGrade(grades) geeft 6.642857142857143
@@ -113,7 +113,17 @@ console.log(outcomeGradesAverage)
 // Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
 // Tip: Google is your best friend!
 
-
+// function gradesAverage() {
+//     let total = 0
+//     for (let i = 0; i < grades.length; i++) {
+//     total += grades[i];
+//
+//     }
+//     return total/grades.length
+// }
+//
+// const outcomeGradesAverage = Math.round(gradesAverage())
+// console.log(outcomeGradesAverage)
 
 
 /* Bonusopdracht: hoogste cijfer */
